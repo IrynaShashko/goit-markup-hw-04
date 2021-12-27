@@ -256,9 +256,13 @@ img {
     content: "";
     background-image: url(../images/envelope.svg);
     background-size: contain;
-    background-color: red;
     width: 16px;
     height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .tel-link:hover,
@@ -275,6 +279,13 @@ img {
 .icon-tel::before {
     content: "";
     background-image: url(../images/phone.svg);
+    width: 10px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    background-position: center;
 }
 
 
@@ -421,7 +432,8 @@ img {
 
 .info-li-title:nth-child(3):before {
     background-image: url(../images/computer.svg);
-    padding: 25px 102px;
+    background-position: center;
+
 }
 
 .info-li-title:nth-child(4):before {
