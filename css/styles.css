@@ -66,8 +66,14 @@ img {
 }
 
 .main-hero-studio {
-    background: var(--footer-color);
+    background-color: var(--footer-color);
     text-align: center;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-hero-title-studio {
@@ -79,7 +85,7 @@ img {
     font-weight: 900;
     font-style: normal;
     letter-spacing: 0.06em;
-    background-color: var(--footer-color);
+    background-color: transparent;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -246,6 +252,15 @@ img {
     line-height: 1.7;
 }
 
+.icon-mail::before {
+    content: "";
+    background-image: url(../images/envelope.svg);
+    background-size: contain;
+    background-color: red;
+    width: 16px;
+    height: 12px;
+}
+
 .tel-link:hover,
 .tel-link:focus {
     color: var(--color-btn)
@@ -256,6 +271,12 @@ img {
     font-style: normal;
     line-height: 1.7;
 }
+
+.icon-tel::before {
+    content: "";
+    background-image: url(../images/phone.svg);
+}
+
 
 .hero-btn {
     font-family: Roboto, sans-serif;
@@ -388,10 +409,41 @@ img {
     align-items: center;
 }
 
+.info-li-title:nth-child(1):before {
+    background-image: url(../images/vector.svg);
+    padding: 25px 102px;
+}
+
+.info-li-title:nth-child(2):before {
+    background-image: url(../images/time.svg);
+    padding: 25px 102px;
+}
+
+.info-li-title:nth-child(3):before {
+    background-image: url(../images/computer.svg);
+    padding: 25px 102px;
+}
+
+.info-li-title:nth-child(4):before {
+    background-image: url(../images/astronaut.svg);
+    padding: 25px 102px;
+}
+
+
 .info-container .info-li-title+.info-li-title {
     margin-left: 30px;
 }
 
+.info-li-title::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: var(--color-section);
+    background-size: contain;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .img-list-studio {
     display: flex;
