@@ -232,6 +232,10 @@ img {
     color: var(--second-text-color);
 }
 
+.header-social-icon {
+    fill: currentColor;
+}
+
 .contacts:hover,
 .contacts:focus {
     color: var(--color-active);
@@ -253,16 +257,8 @@ img {
     line-height: 1.7;
 }
 
-.icon-mail::before {
-    content: "";
-    background-image: url(../images/envelope.svg);
-    background-size: contain;
-    width: 16px;
-    height: 12px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
+
+.header-social-icon {
     margin-right: 10px;
 }
 
@@ -275,18 +271,6 @@ img {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     line-height: 1.7;
-}
-
-.icon-tel::before {
-    content: "";
-    background-image: url(../images/phone.svg);
-    width: 10px;
-    height: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-right: 10px;
-    background-position: center;
 }
 
 
@@ -320,6 +304,7 @@ img {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-btn {
@@ -329,8 +314,8 @@ img {
 
 .main-hero-btn-studio {
     background: var(--color-active);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -342,6 +327,12 @@ img {
     height: 50px;
     left: 700px;
     top: 430px;
+}
+
+.main-hero-btn-studio:hover,
+.main-hero-btn-studio:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-list-title {
@@ -389,11 +380,6 @@ img {
 .info, .team {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -482,6 +468,8 @@ img {
     display: flex;
 }
 
+
+
 .mail-link-address {
     margin-bottom: 9px;
 }
@@ -526,6 +514,11 @@ img {
     width: 370px;
 }
 
+.hero-item:hover,
+.hero-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .hero-list {
     display: flex;
     flex-wrap: wrap;
@@ -552,7 +545,7 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: var(--color-section);
+    color: rgba(175, 177, 184, 1);
 }
 
 .team-social-icon {
@@ -576,10 +569,11 @@ img {
     margin-left: 10px;
 }
 
-
-.footer {
-    display: flex;
+.team-social-icon:hover,
+.team-social-icon:focus {
+    fill: var(--color-btn);
 }
+
 
 .footer-adress {
     display: inline-block;
@@ -594,6 +588,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-btn);
+    margin-bottom: 20px;
 }
 
 .footer-adress {
@@ -638,4 +633,68 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     margin-bottom: 50px;
+}
+
+.client-list-link {
+    color: rgba(175, 177, 184, 1);
+}
+
+.client-social-icon {
+    fill: currentColor;
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+    color: var(--color-active);
+}
+
+.client-list-item:hover,
+.client-list-item:focus {
+    border-color: var(--color-active);
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-btn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--color-btn);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
+
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--color-active);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--color-active);
+    color: var(--color-btn);
+}
+
+.footer-social-list .footer-social-item+.footer-social-item {
+    margin-left: 10px;
+}
+
+.footer-social-list-icons {
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+
+.footer-adress {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
