@@ -160,10 +160,10 @@ img {
 /*.................................................... FOOTER............................................ */
 .footer {
     background: var(--footer-color);
-    left: 0px;
-    top: 2097px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .street-address {
@@ -241,8 +241,6 @@ img {
 
 .footer-container {
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footer-social-link {
